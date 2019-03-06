@@ -1,8 +1,9 @@
 const fs = require('fs')
 const app = require('http')
 const port = 8080
-const ip = 'localhost'
+const ip = '192.168.0.13'           // atualizar o ip antes de iniciar o servidor
 const index = 'public/index.html'
+const email_page = 'public/email.html'
 const index_css = 'public/stylesheet/index.css'
 
 server = app.createServer((req, res) => {
@@ -10,7 +11,16 @@ server = app.createServer((req, res) => {
     res.writeHead(200)
 
     if(req.url === '/'){
-        fs.readFile(index,'utf8', (err, data) => {
+        fs.readFile(index, (err, data) => {
+            if (err)
+                throw err
+            else {
+                res.end(data)
+            }
+        })
+    }
+    else if(req.url === '/email'){
+        fs.readFile(email_page, (err, data) => {
             if (err)
                 throw err
             else {
@@ -19,7 +29,7 @@ server = app.createServer((req, res) => {
         })
     }
     else{
-        fs.readFile('public' + req.url,'utf8', (err, data) => {
+        fs.readFile('public' + req.url, (err, data) => {
             if (err)
                 throw err
             else {

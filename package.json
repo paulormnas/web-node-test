@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/paulormnas/web-node-test/issues"
   },
-  "homepage": "https://github.com/paulormnas/web-node-test#readme"
+  "homepage": "https://github.com/paulormnas/web-node-test#readme",
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "express": "^4.16.4"
+  }
 }

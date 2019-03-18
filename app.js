@@ -1,24 +1,26 @@
 let express = require('express')
 let app = express()
-let engines = require('consolidate')
 const fs = require('fs')
 const port = 8080
 const ip = '0.0.0.0'           // atualizar o ip antes de iniciar o servidor
-const index = 'index.html'
-const email_page = 'email.html'
+const index ='index.html'
+const email_page =__dirname + '/public/email.html'
 const index_css = 'public/stylesheet/index.css'
 
 app.use(express.static(__dirname + '/public'))
-app.set('views', __dirname + '/public')
-app.engine('html', engines.mustache)
-app.set('view engine', 'html')
 
-app.get('/', (req, res) => {
-	res.render(index)
-})
+//app.get('/', (req, res) => {
+//	res.render(index)
+//})
 
 app.get('/email', (req, res) => {
-	res.render(email)
+	fs.readFile(email_page, (err, data) => {
+		if(err)
+			throw err
+		else
+			res.status(200).end(data)
+	})
+//	res.end(email_page)
 })
 
 app.listen(port, ip, () => {
@@ -33,8 +35,8 @@ app.listen(port, ip, () => {
 //         fs.readFile(index, (err, data) => {
 //             if (err)
 //                 throw err
-//             else {
-//                 res.end(data)
+	//             else {
+	//                 res.end(data)
 //             }
 //         })
 //     }

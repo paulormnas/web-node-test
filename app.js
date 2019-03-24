@@ -3,24 +3,43 @@ let app = express()
 const fs = require('fs')
 const port = 8080
 const ip = '0.0.0.0'           // atualizar o ip antes de iniciar o servidor
-const index ='index.html'
-const email_page =__dirname + '/public/email.html'
-const index_css = 'public/stylesheet/index.css'
 
 app.use(express.static(__dirname + '/public'))
 
-//app.get('/', (req, res) => {
-//	res.render(index)
-//})
-
 app.get('/email', (req, res) => {
-	fs.readFile(email_page, (err, data) => {
+	fs.readFile(__dirname + '/public/email.html', (err, data) => {
 		if(err)
 			throw err
 		else
 			res.status(200).end(data)
 	})
-//	res.end(email_page)
+})
+
+app.get('/test', (req, res) => {
+  fs.readFile(__dirname + '/public/test.html', (err, data) => {
+    if(err)
+      throw err
+    else
+      res.status(200).end(data)
+  })
+})
+
+app.get('/login', (req, res) => {
+    fs.readFile(__dirname + '/public/login.html', (err, data) => {
+        if(err)
+            throw err
+        else
+            res.status(200).end(data)
+    })
+})
+
+app.get('/login2', (req, res) => {
+    fs.readFile(__dirname + '/public/login2.html', (err, data) => {
+        if(err)
+            throw err
+        else
+            res.status(200).end(data)
+    })
 })
 
 app.listen(port, ip, () => {
@@ -30,7 +49,7 @@ app.listen(port, ip, () => {
 // server = app.createServer((req, res) => {
 //     console.log('Recebendo request \n' + req.url)
 //     res.writeHead(200)
-// 
+//
 //     if(req.url === '/'){
 //         fs.readFile(index, (err, data) => {
 //             if (err)

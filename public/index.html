@@ -2,12 +2,93 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Projeto de Monitoramento</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <link rel="stylesheet" href="stylesheet/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lainf</title>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <link rel="stylesheet" href="http://192.168.0.2:8080/stylesheets/index.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
 </head>
 <body>
-	<a href="login.html">
+    <!-- <header>
+    </header> -->
+
+    <div class="body_title">
+        <img src="http://192.168.0.2:8080/images/matrix-2503236_1920.jpg">
+        <div class="nav_bar_img">
+            <a href="http://192.168.0.2:8080/index.html">
+                <img alt="logo do laboratório" src="http://192.168.0.2:8080/images/cyber_security-64.png">
+            </a>
+        </div>
+        <nav>
+            <a class="nav_link" href="#apresentacao">SOBRE</a>
+            <a class="nav_link" href="#projetos">PROJETOS</a>
+            <a class="nav_link" href="http://192.168.0.2:8080/login.html">ENTRAR</a>
+        </nav>
+        <h1>
+            LABORATÓRIO DE INFORMÁTICA
+        </h1>
+    </div>
+
+    <div id="apresentacao" class="apresentacao">
+        <div class="text-apresentacao">
+            <p>O Laboratório de Informática (Lainf) se encontra dentro da Divisão de Metrologia em Tecnologia da Informação e teleComunicações (Dmtic), do Inmetro. Dentre suas principais atividades destacam-se:
+
+            <ul>
+                <li>Contribuição no desenvolvimento da regulamentação brasileira para equipamentos metrológicos e ativos de Tecnoligia da Informação e teleComunicações (TIC)</li>
+                <li>Serviço de avaliação de produto de software para dispositivos metrológicos</li>
+                <li>Desenvolvimento de pesquisas relacionadas a segurança da informação, ensaio de proficiência para softwares, Internet das Coisas (IoT) e blockchain para metrologia</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="projetos" class="projetos">
+        <div id="proj_monitor_ambiental">
+            <h2>Monitoramento Ambiental</h2>
+            <p>Este projeto tem por objetivo contribuir para o desenvolvimento de um sistema web integrado dentro do campus do Inmetro, de forma a conectar os dispositivos de monitoramento ambiental na área da Diretoria de Metrologia Científica (Dimci) e relacionar os dados de medições de modo a identificar eventos e contribuir para o controle do ambiente.</p>
+
+            <p>Este projeto utiliza o protocolo de RadNet, baseado em redes oportunísticas, na comunicação entre dispositivos, garantido a independência de uma infraestrutura de rede.</p>
+
+        </div>
+
+        <div id="proj_beacon">
+            <h2>Beacon Gerador de Números Aleatórios</h2>
+            <p>Este projeto tem por objetivo contribuir para o desenvolvimento de um sistema web integrado dentro do campus do Inmetro, de forma a conectar os dispositivos de monitoramento ambiental existentes nos laboratórios da Diretoria de Metrologia Científica (Dimci) e relacionar os dados de medições de modo a identificar eventos e contribuir para o controle do ambiente.</p>
+
+        </div>
+
+        <div id="proj_blockchain">
+            <h2>Blockchain Aplicada na Metrologia</h2>
+            <p>Este projeto tem por objetivo contribuir para o desenvolvimento de um sistema web integrado dentro do campus do Inmetro, de forma a conectar os dispositivos de monitoramento ambiental existentes nos laboratórios da Diretoria de Metrologia Científica (Dimci) e relacionar os dados de medições de modo a identificar eventos e contribuir para o controle do ambiente.</p>
+
+        </div>
+
+        <div id="proj_ensaio_proficiencia">
+            <h2>Blockchain Aplicada na Metrologia</h2>
+            <p>Este projeto tem por objetivo contribuir para o desenvolvimento de um sistema web integrado dentro do campus do Inmetro, de forma a conectar os dispositivos de monitoramento ambiental existentes nos laboratórios da Diretoria de Metrologia Científica (Dimci) e relacionar os dados de medições de modo a identificar eventos e contribuir para o controle do ambiente.</p>
+
+        </div>
+
+        <div id="proj_siccciber">
+            <a href="https://siccciber.com.br/"><h2>SICCCIBER</h2></a>
+            <p>Este projeto tem por objetivo contribuir para o desenvolvimento de um sistema web integrado dentro do campus do Inmetro, de forma a conectar os dispositivos de monitoramento ambiental existentes nos laboratórios da Diretoria de Metrologia Científica (Dimci) e relacionar os dados de medições de modo a identificar eventos e contribuir para o controle do ambiente.</p>
+
+        </div>
+    </div>
+
+    <!-- <div id="contato">
+        <h2>CONTATO</h2>
+
+    </div> -->
+
+
+	<!-- <a href="login.html">
    	 <img src="images/IoT.png">
     </a>
     <div id="app">
@@ -56,7 +137,21 @@
         </pre>
     </div>
 
-    <script src="scripts/index.js"></script>
+    <script src="scripts/index.js"></script> -->
 
 </body>
+<footer>
+    <div class="end">
+        <div><p style="align-self: flex-start;">Endereço</p></div>
+    </div>
+    <div class="end-description">
+        <p style="align-self: flex-start;">Campus Xerém<br>
+        Av. Nossa Senhora das Graças, 50 <br>
+        Xerém - Duque de Caxias - RJ<br>
+        CEP: 25250-020 </p>
+    </div>
+    <div class="dev_by">
+        <p>Desenvolvido pelo Lainf</p>
+    </div>
+</footer>
 </html>

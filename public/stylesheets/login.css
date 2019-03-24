@@ -1,0 +1,131 @@
+ /* Bordered form */
+:root{
+  --objects-width: 25%;
+  --objects-width-ls: 80%;
+}
+
+header{
+  background-color: #A6CFFA;
+  text-align: left;
+  margin: 0;
+
+}
+.nav_bar_img {
+  padding: 12px;
+
+}
+
+body {
+  margin:  0;
+}
+
+form {
+}
+
+.form-container{
+  /* border: 3px solid #f1f1f1; */
+  margin:  10em auto ;
+  padding: 10px 10px;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
+h1{
+  /* font: bold; */
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: var(--objects-width);
+  padding: 20px 12px 20px 12px;
+  margin: 5px auto 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+label{
+  width: var(--objects-width);
+  font-size: 1em;
+
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 16px 16px;
+  margin: 5px auto 5px auto;
+  cursor: pointer;
+  width: var(--objects-width);
+  display: block;
+
+}
+
+label {
+ display: block;
+ margin: auto;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  margin: auto;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  display: block;
+  margin: 15px auto 15px auto;
+  width: var(--objects-width);
+}
+
+/* Change styles for span and cancel button on extra small screens */
+/* @media screen and (max-width: 1000px) {
+  button {
+    width: var(--objects-width-ls);
+    font-size: 3em;
+  }
+
+  input[type=text], input[type=password] {
+    width: var(--objects-width-ls);
+    font-size: 2em;
+  }
+
+  label {
+    width: var(--objects-width-ls);
+    font-size: 2em;
+  }
+
+  span.psw {
+    width: var(--objects-width-ls);
+    font-size: 2em;
+  }
+
+  h1 {
+  font-size: 2.5em;
+  }
+} */

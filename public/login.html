@@ -2,34 +2,46 @@
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8">
-		<title>Monitoramento | Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Log in | Monitoramento</title>
+
+		<link rel="stylesheet" type="text/css" href="http://192.168.0.2:8080/stylesheets/login.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 	</head>
 	<body>
-		<form>
-		  <div class="imgcontainer">
-		    <img src="public/IoTjp0.png" alt="Avatar" class="avatar">
-		  </div>
-		
-		  <div class="container">
-		    <label for="uname"><b>Username</b></label>
-		    <input type="text" placeholder="Enter Username" name="uname" required>
-		
-		    <label for="psw"><b>Password</b></label>
-		    <input type="password" placeholder="Enter Password" name="psw" required>
-		
-		    <button type="submit">Login</button>
-		    <label>
-		      <input type="checkbox" checked="checked" name="remember"> Remember me
-		    </label>
-		  </div>
-		
-		  <div class="container" style="background-color:#f1f1f1">
-		    <button type="button" class="cancelbtn">Cancel</button>
-		    <span class="psw">Forgot <a href="#">password?</a></span>
-		  </div>
-		</form>
+		<header>
+        <div class="nav_bar_img">
+            <a href="http://192.168.0.2:8080/index.html">
+                <img alt="logo do laboratório" src="http://192.168.0.2:8080/images/cyber_security-64.png">
+            </a>
+        </div>
+        <!-- <nav>
+            <a class="nav_link" href="#apresentacao">SOBRE</a>
+            <a class="nav_link" href="#projetos">PROJETOS</a>
+            <a class="nav_link" href="http://192.168.0.2:8080/login.html">ENTRAR</a>
+        </nav> -->
+    </header>
+		<div class="form-container">
+			<form>
+			  <!-- <div class="imgcontainer">
+			    <img src="http://192.168.0.2:8080/images/IoT.png" alt="Avatar" class="avatar">
+			  </div> -->
+				<h1 class="titulo">PROJETO DE MONITORAMENTO DO LAINF</h1>
+			  <div class="container">
+			    <label for="uname"><b>Usuário</b></label>
+			    <input type="text" placeholder="coletordedados@inmetro.gov.br" name="uname" required>
 
+			    <label for="psw"><b>Senha</b></label>
+			    <input type="password" placeholder="Invocar1grafico" name="passwd" required>
 
+			    <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+			    <span class="psw"><a href="#">Esqueci minha senha</a></span>
+
+			    <button type="submit">Acessar </button>
+			  </div>
+			</form>
+		</div>
 	<body>
 
 
